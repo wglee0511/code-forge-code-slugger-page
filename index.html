@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Slugger - 프리미엄 숫자 야구 게임</title>
+    <meta name="description" content="Expo/React Native로 제작된 세련된 숫자 야구 게임 Code Slugger를 만나보세요.">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav>
+        <div class="container">
+            <div class="logo">Code Slugger</div>
+            <ul class="nav-links">
+                <li><a href="#features">기능</a></li>
+                <li><a href="#tech">기술</a></li>
+                <li><a href="#download" class="btn-nav">시작하기</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">홈런을 향한<br><span class="highlight">두뇌 게임</span></h1>
+                <p class="hero-subtitle fade-in-delay">단순한 숫자 맞추기를 넘어선 야구 메카닉, <br>Code Slugger에서 당신의 전략을 시험하세요.</p>
+                <div class="cta-group fade-in-delay-2">
+                    <a href="#download" class="btn btn-primary">지금 플레이</a>
+                    <a href="#features" class="btn btn-secondary">더 알아보기</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-right">
+                <div class="diamond-mockup">
+                    <div class="diamond"></div>
+                    <div class="bases">
+                        <div class="base first"></div>
+                        <div class="base second"></div>
+                        <div class="base third"></div>
+                    </div>
+                    <div class="ball-ui">3 S | 2 B</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">주요 기능</h2>
+            <div class="feature-grid">
+                <div class="feature-card glass">
+                    <div class="icon">👤</div>
+                    <h3>솔로 모드</h3>
+                    <p>컴퓨터가 생각한 비밀 번호를 9회 안에 맞추는 클래식한 도전.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="icon">⚔️</div>
+                    <h3>대결 모드</h3>
+                    <p>AI와 번갈아 공격하고 수비하며 전략적인 승부를 겨룹니다.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="icon">🌐</div>
+                    <h3>다국어 지원</h3>
+                    <p>한국어, 영어, 일본어 등 다양한 언어로 전 세계 유저와 만납니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="tech">
+        <div class="container">
+            <h2 class="section-title">Built with Modern Tech</h2>
+            <div class="tech-stack glass">
+                <div class="tech-item">Expo SDK 54</div>
+                <div class="tech-item">React Native</div>
+                <div class="tech-item">Reanimated</div>
+                <div class="tech-item">TypeScript</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Code Slugger. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
