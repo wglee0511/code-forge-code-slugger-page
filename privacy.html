@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Code Slugger</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .privacy-container {
+            padding: 120px 0 100px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .lang-selector {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+        .lang-btn {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            color: var(--text-dim);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: 600;
+        }
+        .lang-btn.active {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+            box-shadow: 0 4px 15px var(--primary-glow);
+        }
+        .policy-content {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            padding: 3rem;
+            border-radius: 24px;
+            backdrop-filter: blur(10px);
+            display: none;
+        }
+        .policy-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease forwards;
+        }
+        .policy-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .policy-content h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .policy-content p, .policy-content ul {
+            color: var(--text-dim);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .policy-content ul {
+            padding-left: 1.5rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo" style="text-decoration: none;">Code Slugger</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="privacy-container">
+            <a href="index.html" class="back-link">← 홈으로 돌아가기</a>
+            
+            <div class="lang-selector">
+                <button class="lang-btn" onclick="showLang('ko')">한국어</button>
+                <button class="lang-btn active" onclick="showLang('en')">English</button>
+                <button class="lang-btn" onclick="showLang('ja')">日本語</button>
+                <button class="lang-btn" onclick="showLang('zh')">繁體中文</button>
+            </div>
+
+            <!-- Korean Policy -->
+            <div id="policy-ko" class="policy-content">
+                <h1>개인정보 처리방침</h1>
+                <p>본 개인정보 처리방침은 Code Forge(이하 "서비스 제공자")가 광고 지원 서비스로 개발한 모바일 장치용 Code Slugger 앱(이하 "애플리케이션")에 적용됩니다. 본 서비스는 "있는 그대로(AS IS)" 제공됩니다.</p>
+                
+                <h2>정보 수집 및 이용</h2>
+                <p>애플리케이션은 귀하가 앱을 다운로드하고 사용할 때 정보를 수집합니다. 이 정보에는 다음이 포함될 수 있습니다.</p>
+                <ul>
+                    <li>귀하의 장치 인터넷 프로토콜 주소(예: IP 주소)</li>
+                    <li>귀하가 방문한 애플리케이션의 페이지, 방문 시간 및 날짜, 해당 페이지에서 보낸 시간</li>
+                    <li>애플리케이션에서 보낸 총 시간</li>
+                    <li>귀하의 모바일 장치에서 사용되는 운영 체제</li>
+                </ul>
+                <p>애플리케이션은 귀하의 모바일 장치 위치에 대한 정확한 정보를 수집하지 않습니다.</p>
+                <p>애플리케이션은 귀하의 데이터를 처리하거나 기능을 제공하기 위해 인공지능(AI) 기술을 사용하지 않습니다.</p>
+                
+                <h2>제3자 액세스</h2>
+                <p>서비스 제공자가 애플리케이션 및 서비스를 개선하는 데 도움을 주기 위해 집계되고 익명화된 데이터만 외부 서비스로 주기적으로 전송됩니다.</p>
+                <p>애플리케이션은 데이터를 처리하는 자체 개인정보 처리방침을 가진 제3자 서비스를 활용합니다. 아래는 사용된 제3자 서비스 제공업체의 개인정보 처리방침 링크입니다.</p>
+                <ul>
+                    <li>Google Play Services</li>
+                    <li>AdMob</li>
+                    <li>Expo</li>
+                    <li>Sentry</li>
+                </ul>
+
+                <h2>데이터 보관 및 보안</h2>
+                <p>서비스 제공자는 귀하가 애플리케이션을 사용하는 동안 그리고 그 후 합리적인 기간 동안 사용자가 제공한 데이터를 보관합니다. 데이터 삭제를 원하시면 ranazang@gmail.com으로 문의해 주십시오.</p>
+                <p>귀하의 정보에 대한 기밀성을 유지하기 위해 물리적, 전자적, 절차적 보호 조치를 제공합니다.</p>
+
+                <h2>변경 및 동의</h2>
+                <p>본 정책은 2026-02-21부터 효력이 발생하며, 업데이트 시 본 페이지를 통해 공지됩니다. 애플리케이션을 사용함으로써 귀하는 본 정책에 따른 정보 처리에 동의하게 됩니다.</p>
+            </div>
+
+            <!-- English Policy -->
+            <div id="policy-en" class="policy-content active">
+                <h1>Privacy Policy</h1>
+                <p>This privacy policy applies to the Code Slugger app (hereby referred to as "Application") for mobile devices that was created by Code Forge (hereby referred to as "Service Provider") as an Ad Supported service. This service is intended for use "AS IS".</p>
+                
+                <h2>Information Collection and Use</h2>
+                <p>The Application collects information when you download and use it. This information may include information such as:</p>
+                <ul>
+                    <li>Your device's Internet Protocol address (e.g. IP address)</li>
+                    <li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li>
+                    <li>The time spent on the Application</li>
+                    <li>The operating system you use on your mobile device</li>
+                </ul>
+                <p>The Application does not gather precise information about the location of your mobile device.</p>
+                <p>The Application does not use Artificial Intelligence (AI) technologies to process your data or provide features.</p>
+                
+                <h2>Third Party Access</h2>
+                <p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service.</p>
+                <ul>
+                    <li>Google Play Services</li>
+                    <li>AdMob</li>
+                    <li>Expo</li>
+                    <li>Sentry</li>
+                </ul>
+
+                <h2>Data Retention Policy & Security</h2>
+                <p>The Service Provider will retain User Provided data for as long as you use the Application. For deletion requests, contact ranazang@gmail.com.</p>
+                <p>We provide physical, electronic, and procedural safeguards to protect your information.</p>
+
+                <h2>Changes & Consent</h2>
+                <p>Effective as of 2026-02-21. Continued use is deemed approval of all changes. By using the Application, you consent to the processing of your information.</p>
+            </div>
+
+            <!-- Japanese Policy (Simplified for demo) -->
+            <div id="policy-ja" class="policy-content">
+                <h1>プライバシーポリシー</h1>
+                <p>本プライバシーポリシーは、Code Forge（以下「サービスプロバイダー」）が広告支援サービスとして開発したモバイルデバイス用アプリ「Code Slugger」（以下「アプリケーション」）に適用されます。</p>
+                <h2>情報の収集と利用</h2>
+                <p>アプリケーションは、ダウンロードおよび使用時にデバイスのIPアドレス、訪問ページ、利用時間、OS情報などを収集する場合があります。位置情報の収集やAI技術の使用は行いません。</p>
+                <h2>第三者への提供</h2>
+                <p>Google Play Services, AdMob, Expo, Sentryなどの第三者サービスを利用しており、匿名化されたデータが改善のために送信される場合があります。</p>
+                <p>お問い合わせ: ranazang@gmail.com</p>
+            </div>
+
+            <!-- Traditional Chinese Policy (Simplified for Taiwan/TW) -->
+            <div id="policy-zh" class="policy-content">
+                <h1>隱私權政策</h1>
+                <p>本隱私權政策適用於由 Code Forge（以下簡稱「服務提供者」）開發的行動裝置應用程式 Code Slugger（以下簡稱「本應用程式」）。</p>
+                <h2>資訊收集與使用</h2>
+                <p>當您下載並使用本應用程式時，可能會收集您的 IP 地址、造訪頁面、造訪時間及作業系統等資訊。本應用程式不會收集精確的位置資訊，亦不使用 AI 技術處理您的數據。</p>
+                <h2>第三方存取</h2>
+                <p>我們會與 Google Play Services、AdMob、Expo 及 Sentry 等第三方服務合作，僅傳輸匿名化的聚合數據以改進服務。</p>
+                <p>聯絡我們: ranazang@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Code Slugger. All rights reserved.</p>
+            <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1.5rem;">
+                <a href="privacy.html" style="color: var(--text-dim); text-decoration: none; font-size: 0.9rem;">개인정보 처리방침 (Privacy Policy)</a>
+                <a href="terms.html" style="color: var(--text-dim); text-decoration: none; font-size: 0.9rem;">이용약관 (Terms & Conditions)</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showLang(lang) {
+            document.querySelectorAll('.policy-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            
+            document.getElementById('policy-' + lang).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

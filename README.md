@@ -3,7 +3,7 @@
 이 저장소는 Expo/React Native로 제작된 크로스플랫폼 숫자 야구 게임, **Code Slugger**의 공식 홍보 및 소개 페이지를 담고 있습니다.
 
 ## 🔗 링크
-- **공식 페이지:** [https://(유저-ID).github.io/code-slugger-page/](https://(유저-ID).github.io/code-slugger-page/)
+- **공식 페이지:** [https://wglee0511.github.io/code-forge-code-slugger-page/](https://wglee0511.github.io/code-forge-code-slugger-page/)
 
 ## ⚾ 프로젝트 정보
 **Code Slugger**는 고전적인 숫자 야구 게임에 야구 다이아몬드 UI와 화려한 애니메이션을 결합한 게임입니다.
@@ -32,10 +32,15 @@ npx serve .
 ```
 
 ### GitHub Pages 배포
-이 저장소는 GitHub Pages를 통해 배포되도록 설정되어 있습니다.
+이 프로젝트는 `gh-pages` 패키지를 사용하여 간편하게 배포할 수 있습니다.
+
 1. 이 저장소를 본인의 GitHub 계정으로 푸시합니다.
-2. 저장소 설정(Settings) -> Pages 메뉴로 이동합니다.
-3. Build and deployment의 Source를 `Deploy from a branch`로 선택하고 `main` 브랜치를 지정하여 저장합니다.
+2. 터미널에서 다음 명령어를 실행합니다:
+```bash
+npm run deploy
+```
+3. GitHub 저장소 설정(Settings) -> Pages 메뉴에서 `gh-pages` 브랜치가 배포 소스로 설정되어 있는지 확인합니다.
+
 
 ## 📄 라이선스
 Private (제공자 요청에 따름)

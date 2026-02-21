@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Code Slugger</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .terms-container {
+            padding: 120px 0 100px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .lang-selector {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+        .lang-btn {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            color: var(--text-dim);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: 600;
+        }
+        .lang-btn.active {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+            box-shadow: 0 4px 15px var(--primary-glow);
+        }
+        .policy-content {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            padding: 3rem;
+            border-radius: 24px;
+            backdrop-filter: blur(10px);
+            display: none;
+        }
+        .policy-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease forwards;
+        }
+        .policy-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .policy-content h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .policy-content p, .policy-content ul {
+            color: var(--text-dim);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .policy-content ul {
+            padding-left: 1.5rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo" style="text-decoration: none;">Code Slugger</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="terms-container">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            
+            <div class="lang-selector">
+                <button class="lang-btn" onclick="showLang('ko')">한국어</button>
+                <button class="lang-btn active" onclick="showLang('en')">English</button>
+                <button class="lang-btn" onclick="showLang('ja')">日本語</button>
+                <button class="lang-btn" onclick="showLang('zh')">繁體中文</button>
+            </div>
+
+            <!-- English Terms -->
+            <div id="policy-en" class="policy-content active">
+                <h1>Terms & Conditions</h1>
+                <p>These terms and conditions apply to the Code Slugger app (hereby referred to as "Application") for mobile devices that was created by Code Forge (hereby referred to as "Service Provider") as an Ad Supported service.</p>
+                
+                <p>Upon downloading or utilizing the Application, you are automatically agreeing to the following terms. It is strongly advised that you thoroughly read and understand these terms prior to using the Application.</p>
+                
+                <h2>Intellectual Property</h2>
+                <p>Unauthorized copying, modification of the Application, any part of the Application, or our trademarks is strictly prohibited. Any attempts to extract the source code of the Application, translate the Application into other languages, or create derivative versions are not permitted.</p>
+
+                <h2>Service Modifications</h2>
+                <p>The Service Provider reserves the right to modify the Application or charge for their services at any time and for any reason. Any charges will be clearly communicated.</p>
+
+                <h2>Security</h2>
+                <p>It is your responsibility to maintain the security of your phone. The Service Provider strongly advise against jailbreaking or rooting your phone, as it could compromise security and functionality.</p>
+
+                <h2>Third-Party Services</h2>
+                <p>The Application utilizes third-party services that have their own Terms and Conditions:</p>
+                <ul>
+                    <li>Google Play Services</li>
+                    <li>AdMob</li>
+                    <li>Expo</li>
+                    <li>Sentry</li>
+                </ul>
+
+                <h2>Updates & Termination</h2>
+                <p>The Service Provider may update or cease providing the application at any time. Upon termination, your rights to use the application will end, and you must delete it from your device.</p>
+
+                <h2>Contact Us</h2>
+                <p>If you have any questions, contact the Service Provider at ranazang@gmail.com.</p>
+                <p><i>Effective as of 2026-02-21</i></p>
+            </div>
+
+            <!-- Korean Terms -->
+            <div id="policy-ko" class="policy-content">
+                <h1>이용약관</h1>
+                <p>본 이용약관은 Code Forge(이하 "서비스 제공자")가 광고 지원 서비스로 제공하는 모바일 기기용 Code Slugger 앱(이하 "애플리케이션")에 적용됩니다.</p>
+                <p>애플리케이션을 다운로드하거나 사용함과 동시에 귀하는 다음 약관에 자동으로 동의하게 됩니다. 애플리케이션을 사용하기 전에 본 약관을 철저히 읽고 이해하는 것을 적극 권장합니다.</p>
+                
+                <h2>지적 재산권</h2>
+                <p>애플리케이션 또는 상표의 무단 복제, 수정은 엄격히 금지됩니다. 소스 코드 추출 시도, 타 언어로의 번역 또는 파생 버전 제작은 허용되지 않습니다.</p>
+
+                <h2>서비스 변경</h2>
+                <p>서비스 제공자는 언제든지 어떤 이유로든 애플리케이션을 수정하거나 서비스에 대해 비용을 부과할 권리를 보유합니다. 모든 유료 서비스는 사전에 명확하게 안내됩니다.</p>
+
+                <h2>보안</h2>
+                <p>기기의 보안을 유지하는 것은 귀하의 책임입니다. 기기의 보안 기능을 손상시킬 수 있는 탈옥(Jailbreaking) 또는 루팅(Rooting) 행위를 하지 말 것을 강력히 권고합니다.</p>
+
+                <h2>제3자 서비스 및 업데이트</h2>
+                <p>본 앱은 Google Play, AdMob, Expo, Sentry 등 자체 약관을 가진 제3자 서비스를 이용합니다. 서비스 제공자는 필요에 따라 앱을 업데이트하거나 제공을 중단할 수 있으며, 종료 시 귀하의 사용 권한은 소멸됩니다.</p>
+
+                <p>문의: ranazang@gmail.com<br><i>시행일: 2026-02-21</i></p>
+            </div>
+
+            <!-- Japanese Terms (Simplified) -->
+            <div id="policy-ja" class="policy-content">
+                <h1>利用規約</h1>
+                <p>本規約は、Code Forge（以下「提供者」）が提供する「Code Slugger」アプリに適用されます。利用者はアプリを使用することで本規約に同意したものとみなされます。</p>
+                <h2>知的財産権</h2>
+                <p>本アプリの複製、改변、ソースコード의抽出などは禁止されています。すべての権利は提供者に帰属します。</p>
+                <h2>セキュリティ</h2>
+                <p>デバイスのセキュリティ管理は利用者の責任です。不適切な改造（脱獄、ルート化等）は推奨されません。</p>
+                <h2>お問い合わせ</h2>
+                <p>ranazang@gmail.com<br><i>発効日: 2026-02-21</i></p>
+            </div>
+
+            <!-- Traditional Chinese Terms (Simplified) -->
+            <div id="policy-zh" class="policy-content">
+                <h1>服務條款</h1>
+                <p>本條款適用於由 Code Forge（以下簡稱「服務提供者」）提供的 Code Slugger 應用程式。下載或使用本程式即代表您同意本條款。</p>
+                <h2>智慧財產權</h2>
+                <p>嚴禁未經授權的複製、修改或嘗試提取源代碼。本程式之所有權利均歸服務提供者所有。</p>
+                <h2>安全責任</h2>
+                <p>用戶需自行維護裝置安全。強烈建議不要對裝置進行越獄或刷機，以免影響安全性與功能。</p>
+                <h2>聯絡我們</h2>
+                <p>ranazang@gmail.com<br><i>生效日期: 2026-02-21</i></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Code Slugger. All rights reserved.</p>
+            <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1.5rem;">
+                <a href="privacy.html" style="color: var(--text-dim); text-decoration: none; font-size: 0.9rem;">개인정보 처리방침 (Privacy Policy)</a>
+                <a href="terms.html" style="color: var(--text-dim); text-decoration: none; font-size: 0.9rem;">이용약관 (Terms & Conditions)</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showLang(lang) {
+            document.querySelectorAll('.policy-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            
+            document.getElementById('policy-' + lang).classList.add('active');
+            event.target.classList.add('active');
+            
+            // Update back link text based on language
+            const backLink = document.querySelector('.back-link');
+            if (lang === 'ko') backLink.innerText = '← 홈으로 돌아가기';
+            else if (lang === 'ja') backLink.innerText = '← ホームへ戻る';
+            else if (lang === 'zh') backLink.innerText = '← 返回首頁';
+            else backLink.innerText = '← Back to Home';
+        }
+    </script>
+</body>
+</html>
