@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Slugger - Premium Number Baseball Game</title>
+    <meta name="description" content="Meet Code Slugger, a stylish number baseball game built with Expo/React Native.">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .lang-switch {
+            display: flex;
+            gap: 0.5rem;
+            margin-right: 1.5rem;
+        }
+        .lang-btn-mini {
+            background: none;
+            border: 1px solid var(--glass-border);
+            color: var(--text-dim);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .lang-btn-mini.active {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+        @media (max-width: 768px) {
+            .lang-switch { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav>
+        <div class="container">
+            <div class="logo">Code Slugger</div>
+            <ul class="nav-links">
+                <li><a href="#features" data-i18n="nav_features">Features</a></li>
+                <li><a href="#tech" data-i18n="nav_tech">Tech</a></li>
+                <li class="lang-switch">
+                    <button class="lang-btn-mini active" onclick="changeLanguage('en')">EN</button>
+                    <button class="lang-btn-mini" onclick="changeLanguage('ko')">KO</button>
+                    <button class="lang-btn-mini" onclick="changeLanguage('ja')">JA</button>
+                    <button class="lang-btn-mini" onclick="changeLanguage('zh')">TW</button>
+                </li>
+                <li><a href="#download" class="btn-nav" data-i18n="nav_start">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in" data-i18n="hero_title">Brain Game for a<br><span class="highlight">Home Run</span></h1>
+                <p class="hero-subtitle fade-in-delay" data-i18n="hero_subtitle">Beyond simple number guessing, test your strategy in Code Slugger with baseball mechanics.</p>
+                <div class="cta-group fade-in-delay-2">
+                    <a href="#download" class="btn btn-primary" data-i18n="btn_play">Play Now</a>
+                    <a href="#features" class="btn btn-secondary" data-i18n="btn_more">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-right">
+                <div class="diamond-mockup">
+                    <div class="diamond"></div>
+                    <div class="bases">
+                        <div class="base first"></div>
+                        <div class="base second"></div>
+                        <div class="base third"></div>
+                    </div>
+                    <div class="ball-ui">3 S | 2 B</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-i18n="features_title">Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card glass">
+                    <div class="icon">👤</div>
+                    <h3 data-i18n="feat_solo_title">Solo Mode</h3>
+                    <p data-i18n="feat_solo_desc">A classic challenge to guess the secret number thought of by the computer within 9 innings.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="icon">⚔️</div>
+                    <h3 data-i18n="feat_battle_title">Battle Mode</h3>
+                    <p data-i18n="feat_battle_desc">Take turns attacking and defending against AI in a strategic showdown.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="icon">🌐</div>
+                    <h3 data-i18n="feat_lang_title">Multi-language</h3>
+                    <p data-i18n="feat_lang_desc">Available in multiple languages including Korean, English, and Japanese.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="tech">
+        <div class="container">
+            <h2 class="section-title">Built with Modern Tech</h2>
+            <div class="tech-stack glass">
+                <div class="tech-item">Expo SDK 54</div>
+                <div class="tech-item">React Native</div>
+                <div class="tech-item">Reanimated</div>
+                <div class="tech-item">TypeScript</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Code Slugger. All rights reserved.</p>
+            <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1.5rem;">
+                <a href="privacy.html" style="color: var(--text-dim); text-decoration: none; font-size: 0.9rem;" data-i18n="footer_privacy">Privacy Policy</a>
+                <a href="terms.html" style="color: var(--text-dim); text-decoration: none; font-size: 0.9rem;" data-i18n="footer_terms">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "code-slugger-page",
+  "version": "1.0.0",
+  "description": "이 저장소는 Expo/React Native로 제작된 크로스플랫폼 숫자 야구 게임, **Code Slugger**의 공식 홍보 및 소개 페이지를 담고 있습니다.",
+  "main": "script.js",
+  "scripts": {
+    "predeploy": "npm install",
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wglee0511/code-forge-code-slugger-page.git"
+  },
+  "keywords": [],
+  "author": "Wongyo Lee <ranazang@naver.com>",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wglee0511/code-forge-code-slugger-page/issues"
+  },
+  "homepage": "https://wglee0511.github.io/code-forge-code-slugger-page/",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
