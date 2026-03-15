@@ -70,6 +70,24 @@ const translations = {
         feat_lang_desc: "提供繁體中文、韓文、英文、日文等多種語言選擇。",
         footer_privacy: "隱私權政策",
         footer_terms: "服務條款"
+    },
+    es: {
+        nav_features: "Características",
+        nav_tech: "Tecnología",
+        nav_start: "Comenzar",
+        hero_title: "Juego mental para un<br><span class='highlight'>Home Run</span>",
+        hero_subtitle: "Más que adivinar números, pon a prueba tu estrategia en Code Slugger con mecánicas de béisbol.",
+        btn_play: "Jugar ahora",
+        btn_more: "Saber más",
+        features_title: "Características principales",
+        feat_solo_title: "Modo solitario",
+        feat_solo_desc: "Un desafío clásico para adivinar el número secreto de la computadora en 9 entradas.",
+        feat_battle_title: "Modo batalla",
+        feat_battle_desc: "Túrnate para atacar y defender contra la IA en un enfrentamiento estratégico.",
+        feat_lang_title: "Multilenguaje",
+        feat_lang_desc: "Disponible en varios idiomas, incluyendo coreano, inglés, japonés, chino y español.",
+        footer_privacy: "Política de privacidad",
+        footer_terms: "Términos y condiciones"
     }
 };
 

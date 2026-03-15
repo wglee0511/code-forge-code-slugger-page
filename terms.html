@@ -99,6 +99,7 @@
                 <button class="lang-btn active" onclick="showLang('en')">English</button>
                 <button class="lang-btn" onclick="showLang('ja')">日本語</button>
                 <button class="lang-btn" onclick="showLang('zh')">繁體中文</button>
+                <button class="lang-btn" onclick="showLang('es')">Español</button>
             </div>
 
             <!-- English Terms -->
@@ -178,6 +179,23 @@
                 <h2>聯絡我們</h2>
                 <p>admin@getcodeforge.dev<br><i>生效日期: 2026-02-21</i></p>
             </div>
+
+            <!-- Spanish Terms -->
+            <div id="policy-es" class="policy-content">
+                <h1>Términos y Condiciones</h1>
+                <p>Estos términos se aplican a la aplicación Code Slugger (en adelante, "Aplicación") para dispositivos móviles, creada por Code Forge (en adelante, "Proveedor de servicios") como un servicio con publicidad.</p>
+                <p>Al descargar o usar la Aplicación, usted acepta automáticamente los siguientes términos. Se recomienda encarecidamente que lea y comprenda completamente estos términos antes de usar la Aplicación.</p>
+                <h2>Propiedad Intelectual</h2>
+                <p>Está estrictamente prohibida la copia no autorizada, modificación de la Aplicación, cualquier parte de la Aplicación o nuestras marcas comerciales. No se permite ningún intento de extraer el código fuente de la Aplicación, traducir la Aplicación a otros idiomas o crear versiones derivadas.</p>
+                <h2>Modificaciones del Servicio</h2>
+                <p>El Proveedor de servicios se reserva el derecho de modificar la Aplicación o cobrar por sus servicios en cualquier momento y por cualquier motivo. Cualquier cargo se comunicará claramente.</p>
+                <h2>Seguridad</h2>
+                <p>Es su responsabilidad mantener la seguridad de su dispositivo. El Proveedor de servicios recomienda encarecidamente no hacer jailbreak ni root a su dispositivo, ya que esto podría comprometer la seguridad y la funcionalidad.</p>
+                <h2>Servicios de Terceros y Actualizaciones</h2>
+                <p>La Aplicación utiliza servicios de terceros como Google Play Services, AdMob, Expo y Sentry que tienen sus propios Términos y Condiciones. El Proveedor de servicios puede actualizar o dejar de proporcionar la aplicación en cualquier momento. Tras la terminación, sus derechos de uso de la aplicación finalizarán.</p>
+                <h2>Contáctenos</h2>
+                <p>admin@getcodeforge.dev<br><i>Fecha de vigencia: 2026-02-21</i></p>
+            </div>
         </div>
     </div>
 
@@ -204,6 +222,7 @@
             if (lang === 'ko') backLink.innerText = '← 홈으로 돌아가기';
             else if (lang === 'ja') backLink.innerText = '← ホームへ戻る';
             else if (lang === 'zh') backLink.innerText = '← 返回首頁';
+            else if (lang === 'es') backLink.innerText = '← Volver al inicio';
             else backLink.innerText = '← Back to Home';
         }
     </script>
