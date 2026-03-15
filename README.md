@@ -3,7 +3,7 @@
 이 저장소는 Expo/React Native로 제작된 크로스플랫폼 숫자 야구 게임, **Code Slugger**의 공식 홍보 및 소개 페이지를 담고 있습니다.
 
 ## 🔗 링크
-- **공식 페이지:** [https://wglee0511.github.io/code-forge-code-slugger-page/](https://wglee0511.github.io/code-forge-code-slugger-page/)
+- **공식 페이지:** [https://codeslugger.getcodeforge.dev/](https://codeslugger.getcodeforge.dev/)
 
 ## ⚾ 프로젝트 정보
 **Code Slugger**는 고전적인 숫자 야구 게임에 야구 다이아몬드 UI와 화려한 애니메이션을 결합한 게임입니다.
