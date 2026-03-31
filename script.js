@@ -15,7 +15,9 @@ const translations = {
         feat_lang_title: "Multi-language",
         feat_lang_desc: "Available in multiple languages including Korean, English, and Japanese.",
         footer_privacy: "Privacy Policy",
-        footer_terms: "Terms & Conditions"
+        footer_terms: "Terms & Conditions",
+        btn_ios: "App Store",
+        btn_android: "Android (Coming Soon)"
     },
     ko: {
         nav_features: "주요 기능",
@@ -33,7 +35,9 @@ const translations = {
         feat_lang_title: "다국어 지원",
         feat_lang_desc: "한국어, 영어, 일본어 등 다양한 언어로 전 세계 유저와 만납니다.",
         footer_privacy: "개인정보 처리방침",
-        footer_terms: "이용약관"
+        footer_terms: "이용약관",
+        btn_ios: "App Store",
+        btn_android: "Android (출시 예정)"
     },
     ja: {
         nav_features: "機能",
@@ -51,7 +55,9 @@ const translations = {
         feat_lang_title: "多言語対応",
         feat_lang_desc: "韓国語、英語、日本語など、複数の言語で世界中のユーザーをサポート。",
         footer_privacy: "プライバシーポリシー",
-        footer_terms: "利用規約"
+        footer_terms: "利用規約",
+        btn_ios: "App Store",
+        btn_android: "Android (リリース予定)"
     },
     zh: {
         nav_features: "主要功能",
@@ -69,7 +75,9 @@ const translations = {
         feat_lang_title: "多語言支持",
         feat_lang_desc: "提供繁體中文、韓文、英文、日文等多種語言選擇。",
         footer_privacy: "隱私權政策",
-        footer_terms: "服務條款"
+        footer_terms: "服務條款",
+        btn_ios: "App Store",
+        btn_android: "Android (即將推出)"
     },
     es: {
         nav_features: "Características",
@@ -87,7 +95,9 @@ const translations = {
         feat_lang_title: "Multilenguaje",
         feat_lang_desc: "Disponible en varios idiomas, incluyendo coreano, inglés, japonés, chino y español.",
         footer_privacy: "Política de privacidad",
-        footer_terms: "Términos y condiciones"
+        footer_terms: "Términos y condiciones",
+        btn_ios: "App Store",
+        btn_android: "Android (Próximamente)"
     }
 };
 
