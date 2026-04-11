@@ -1,12 +1,15 @@
 const translations = {
     en: {
         nav_features: "Features",
-        nav_tech: "Tech",
-        nav_start: "Get Started",
+        nav_tech: "Platforms",
+        nav_start: "Download on the App Store",
         hero_title: "Brain Game for a<br><span class='highlight'>Home Run</span>",
         hero_subtitle: "Beyond simple number guessing, test your strategy in Code Slugger with baseball mechanics.",
-        btn_play: "Play Now",
+        btn_play: "Download on the App Store",
         btn_more: "Learn More",
+        platforms_title: "Available Platforms",
+        ui_puzzle: "Puzzle",
+        ui_free: "Free",
         features_title: "Key Features",
         feat_solo_title: "Solo Mode",
         feat_solo_desc: "A classic challenge to guess the secret number thought of by the computer within 9 innings.",
@@ -21,12 +24,15 @@ const translations = {
     },
     ko: {
         nav_features: "주요 기능",
-        nav_tech: "기술 스택",
-        nav_start: "시작하기",
+        nav_tech: "플랫폼",
+        nav_start: "App Store에서 다운로드",
         hero_title: "홈런을 향한<br><span class='highlight'>두뇌 게임</span>",
         hero_subtitle: "단순한 숫자 맞추기를 넘어선 야구 메카닉, Code Slugger에서 당신의 전략을 시험하세요.",
-        btn_play: "지금 플레이",
+        btn_play: "App Store에서 다운로드",
         btn_more: "더 알아보기",
+        platforms_title: "지원 플랫폼",
+        ui_puzzle: "퍼즐",
+        ui_free: "무료",
         features_title: "주요 기능",
         feat_solo_title: "솔로 모드",
         feat_solo_desc: "컴퓨터가 생각한 비밀 번호를 9회 안에 맞추는 클래식한 도전.",
@@ -41,12 +47,15 @@ const translations = {
     },
     ja: {
         nav_features: "機能",
-        nav_tech: "技術",
-        nav_start: "開始",
+        nav_tech: "プラットフォーム",
+        nav_start: "App Storeからダウンロード",
         hero_title: "ホームランへの<br><span class='highlight'>頭脳戦</span>",
         hero_subtitle: "単なる数字当てを超えた野球メカニクス、Code Sluggerであなたの戦略を試しましょう。",
-        btn_play: "今すぐプレイ",
+        btn_play: "App Storeからダウンロード",
         btn_more: "詳細を見る",
+        platforms_title: "対応プラットフォーム",
+        ui_puzzle: "パズル",
+        ui_free: "無料",
         features_title: "主な機能",
         feat_solo_title: "ソロモード",
         feat_solo_desc: "コンピュータが隠した数字を9イニング以内に当てるクラシックな挑戦。",
@@ -61,12 +70,15 @@ const translations = {
     },
     zh: {
         nav_features: "主要功能",
-        nav_tech: "技術棧",
-        nav_start: "立即開始",
+        nav_tech: "平台",
+        nav_start: "在 App Store 下載",
         hero_title: "邁向全壘打的<br><span class='highlight'>腦力大戰</span>",
         hero_subtitle: "超越簡單的數字猜測，在 Code Slugger 中結合棒구機制的策略考驗。",
-        btn_play: "立即遊玩",
+        btn_play: "在 App Store 下載",
         btn_more: "了解更多",
+        platforms_title: "支援平台",
+        ui_puzzle: "益智",
+        ui_free: "免費",
         features_title: "主要功能",
         feat_solo_title: "單人模式",
         feat_solo_desc: "在 9 局內猜中電腦想出的秘密數字，經典的挑戰。",
@@ -81,12 +93,15 @@ const translations = {
     },
     es: {
         nav_features: "Características",
-        nav_tech: "Tecnología",
-        nav_start: "Comenzar",
+        nav_tech: "Plataformas",
+        nav_start: "Descargar en App Store",
         hero_title: "Juego mental para un<br><span class='highlight'>Home Run</span>",
         hero_subtitle: "Más que adivinar números, pon a prueba tu estrategia en Code Slugger con mecánicas de béisbol.",
-        btn_play: "Jugar ahora",
+        btn_play: "Descargar en App Store",
         btn_more: "Saber más",
+        platforms_title: "Plataformas disponibles",
+        ui_puzzle: "Rompecabezas",
+        ui_free: "Gratis",
         features_title: "Características principales",
         feat_solo_title: "Modo solitario",
         feat_solo_desc: "Un desafío clásico para adivinar el número secreto de la computadora en 9 entradas.",
@@ -157,13 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.head.appendChild(style);
 
-    // Diamond animation
-    const diamond = document.querySelector('.diamond');
-    if (diamond) {
-        setInterval(() => {
-            diamond.style.borderColor = `hsl(${Math.random() * 360}, 70%, 60%)`;
-        }, 3000);
-    }
+
 
     // Smooth scroll for nav links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
